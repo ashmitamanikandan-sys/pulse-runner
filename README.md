@@ -1,11 +1,11 @@
 <div align="center">
 
-<img src="./assets/pulse-runner-hero.svg" width="100%" alt="Pulse Runner cyberpunk banner">
+<img src="./pulse-runner-hero.svg" width="100%" alt="Pulse Runner cyberpunk banner">
 
 <br>
 
 <a href="https://ashmitamanikandan-sys.github.io/pulse-runner/">
-  <img src="./assets/play-pulse-runner.svg" width="82%" alt="Enter the Network — Play Pulse Runner">
+  <img src="./play-pulse-runner.svg" width="82%" alt="Enter the Network — Play Pulse Runner">
 </a>
 
 <br>
@@ -217,7 +217,7 @@ Open the repository in VS Code and launch `index.html` using **Live Server**.
 <div align="center">
 
 <a href="https://ashmitamanikandan-sys.github.io/pulse-runner/">
-  <img src="./assets/play-pulse-runner.svg" width="82%" alt="Play Pulse Runner">
+  <img src="./play-pulse-runner.svg" width="82%" alt="Play Pulse Runner">
 </a>
 
 </div>
