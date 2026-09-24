@@ -1,14 +1,16 @@
 <div align="center">
 
-# ⚡ PULSE RUNNER
+<img src="./assets/pulse-runner-hero.svg" width="100%" alt="Pulse Runner cyberpunk banner">
 
-### `NEON NETWORK // CYBER INFILTRATION // SURVIVAL PROTOCOL`
+<br>
 
-`HTML` • `CSS` • `JavaScript` • `Canvas API`
+<a href="https://ashmitamanikandan-sys.github.io/pulse-runner/">
+  <img src="./assets/play-pulse-runner.svg" width="82%" alt="Enter the Network — Play Pulse Runner">
+</a>
 
----
+<br>
 
-### `BUILD → DODGE → SURVIVE`
+`HTML` • `CSS` • `JavaScript` • `Canvas API` • `Web Audio API`
 
 </div>
 
@@ -16,22 +18,21 @@
 
 ## `// MISSION BRIEF`
 
-**Pulse Runner** is a cyberpunk endless-runner set inside a collapsing digital network.
-
-You control a glowing pulse orb moving through hostile sectors filled with corrupted system objects, firewalls, malware nodes and unstable data routes.
-
-Your objective:
-
 ```text
-INFILTRATE
-DODGE
-COLLECT
-SURVIVE
+ACCESS LEVEL      // OPERATIVE
+NETWORK STATE     // HOSTILE
+OBJECTIVE         // SURVIVE THE RUN
 ```
 
-Every second the network becomes faster, louder and more hostile.
+**Pulse Runner** is a neon cyberpunk endless-runner inside a collapsing digital network.
 
-The deeper you go, the less forgiving the system becomes.
+You control a glowing **pulse orb** moving through hostile sectors filled with firewalls, corrupted packets, malware processes and unstable system barriers.
+
+```text
+INFILTRATE  →  DODGE  →  COLLECT  →  SURVIVE
+```
+
+Every kilometre pushes the network into a more aggressive state.
 
 ---
 
@@ -47,169 +48,143 @@ W / ↑       PULSE JUMP
 P           SYSTEM PAUSE
 ```
 
-Mobile controls are also supported.
-
 ---
 
 ## `// THREAT DATABASE`
 
 ```text
-[ CYAN SHARD ]
+╔═ CYAN ENERGY SHARD ═══════════════════════════════╗
+║ STATUS     FRIENDLY SIGNAL                       ║
+║ ACTION     COLLECT                               ║
+║ EFFECT     ENERGY RESTORED                       ║
+║ BONUS      SIGNAL CHAIN EXTENDED                 ║
+╚═══════════════════════════════════════════════════╝
 
-STATUS      FRIENDLY SIGNAL
-ACTION      COLLECT
-EFFECT      ENERGY RESTORED
-BONUS       COMBO CHAIN INCREASED
-```
+╔═ FIREWALL ════════════════════════════════════════╗
+║ STATUS     LETHAL                                ║
+║ ACTION     EVADE                                 ║
+║ FAILURE    FIREWALL BREACHED                     ║
+║ RESULT     CONNECTION TERMINATED                 ║
+╚═══════════════════════════════════════════════════╝
 
-```text
-[ FIREWALL ]
+╔═ NEON SYSTEM BLOCK ═══════════════════════════════╗
+║ STATUS     OBSTRUCTION                           ║
+║ ACTION     JUMP / LANE SHIFT                     ║
+║ FAILURE    ENERGY LOSS                           ║
+╚═══════════════════════════════════════════════════╝
 
-STATUS      LETHAL
-ACTION      EVADE
-FAILURE     CONNECTION TERMINATED
-```
+╔═ MALWARE PROCESS ═════════════════════════════════╗
+║ STATUS     HOSTILE                               ║
+║ ACTION     BYPASS                                ║
+║ FAILURE    HEAVY ENERGY LOSS                     ║
+╚═══════════════════════════════════════════════════╝
 
-```text
-[ NEON BLOCK ]
-
-STATUS      PHYSICAL SYSTEM BARRIER
-ACTION      JUMP / LANE SHIFT
-FAILURE     ENERGY LOSS
-```
-
-```text
-[ MALWARE PROCESS ]
-
-STATUS      HOSTILE
-ACTION      BYPASS
-FAILURE     HEAVY ENERGY LOSS
-```
-
-```text
-[ CORRUPT PACKET ]
-
-STATUS      UNSTABLE DATA OBJECT
-ACTION      EVADE
-FAILURE     MAJOR ENERGY DRAIN
+╔═ CORRUPT PACKET ══════════════════════════════════╗
+║ STATUS     UNSTABLE DATA                         ║
+║ ACTION     EVADE                                 ║
+║ FAILURE    MAJOR ENERGY DRAIN                    ║
+╚═══════════════════════════════════════════════════╝
 ```
 
 ---
 
 ## `// SIGNAL CHAIN`
 
-Collecting multiple energy shards without breaking the chain activates higher-level network streaks.
+Collect energy shards without breaking the sequence.
 
 ```text
-02 SHARDS    → DATA CHAIN
-03+ SHARDS   → PULSE SYNC
-05+ SHARDS   → NEURAL LINK
-08+ SHARDS   → QUANTUM CHAIN
+02 SHARDS      // DATA CHAIN
+03+ SHARDS     // PULSE SYNC
+05+ SHARDS     // NEURAL LINK
+08+ SHARDS     // QUANTUM CHAIN
 ```
 
-The longer the chain survives, the stronger the score multiplier becomes.
-
-Break the rhythm and the network resets your signal.
+The network rewards clean movement with stronger combos, score escalation and visual signal feedback.
 
 ---
 
 ## `// SECTOR ESCALATION`
 
-The system adapts to your movement.
-
-Early sectors are designed to test reaction time.
-
-After **3 KM**, the network begins deploying more aggressive cyber threats.
-
 ```text
 SECTOR 01
-firewalls
-neon blocks
+│
+├── FIREWALLS
+├── NEON BLOCKS
+│
+└── basic network velocity
 
-SECTOR 03+
-malware processes
-higher speed
-reduced reaction window
+
+3 KM+
+│
+├── MALWARE PROCESSES
+├── faster network velocity
+├── reduced reaction window
+│
+└── hostile process escalation
+
 
 LATER SECTORS
-corrupt packets
-denser threat patterns
-faster network velocity
-higher survival pressure
+│
+├── CORRUPT PACKETS
+├── denser threat patterns
+├── higher system pressure
+│
+└── survival probability ↓
 ```
 
-The farther you run, the more the network fights back.
+The farther you run, the harder the system fights back.
 
 ---
 
-## `// HUD RESPONSE SYSTEM`
-
-The interface reacts dynamically to system events.
+## `// BREACH RESPONSE SYSTEM`
 
 ```text
 FIREWALL BREACH
-→ screen flash
-→ HUD shake
-→ breach alert
-→ instant termination
+→ SCREEN FLASH
+→ HUD SHAKE
+→ SECURITY ALERT
+→ CONNECTION TERMINATED
 
-ENERGY LOSS
-→ visual pulse
-→ energy warning
-→ damage message
+ENERGY DAMAGE
+→ ENERGY LOSS PULSE
+→ DAMAGE READOUT
+→ LOW-ENERGY WARNING
 
 SHARD CHAIN
-→ streak banner
-→ combo escalation
-→ cyber signal feedback
+→ STREAK BANNER
+→ COMBO ESCALATION
+→ SIGNAL-LINK FEEDBACK
 
 LEVEL SHIFT
-→ sector escalation alert
-→ velocity increase
-→ threat state update
+→ SECTOR ALERT
+→ VELOCITY INCREASE
+→ THREAT STATE UPDATE
 ```
-
----
-
-## `// AUDIO LAYER`
-
-Pulse Runner uses browser-generated synth feedback instead of traditional audio files.
-
-```text
-SHARD ACQUIRED     → high-frequency signal
-COLLISION          → system impact pulse
-LEVEL SHIFT        → escalation tone
-BREACH             → low-frequency failure signal
-AMBIENCE           → optional synth network loop
-```
-
-No external game engine is required.
 
 ---
 
 ## `// TECHNOLOGY STACK`
 
 ```text
-HTML
-CSS
-JavaScript
-Canvas API
-Web Audio API
+HTML          // interface structure
+CSS           // neon HUD + cyber styling
+JavaScript    // game logic
+Canvas API    // city, orb, threats + animation
+Web Audio API // generated synth feedback
 ```
 
-No framework.
+```text
+FRAMEWORK      NONE
+BACKEND        NONE
+DATABASE       NONE
+GAME ENGINE    NONE
 
-No backend.
-
-No database.
-
-No game engine.
-
-Everything runs directly inside the browser.
+RUNTIME        BROWSER
+```
 
 ---
 
-## `// PROJECT STRUCTURE`
+## `// PROJECT FILES`
 
 ```text
 pulse-runner/
@@ -217,85 +192,62 @@ pulse-runner/
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md
+├── README.md
+│
+└── assets/
+    ├── pulse-runner-hero.svg
+    ├── play-pulse-runner.svg
+    └── system-status.svg
 ```
 
 ---
 
 ## `// LOCAL ACCESS`
 
-Clone the repository:
-
 ```bash
 git clone https://github.com/ashmitamanikandan-sys/pulse-runner.git
 ```
 
-Open the project folder in VS Code.
-
-Launch:
-
-```text
-index.html
-```
-
-For the best experience, run it using **Live Server**.
+Open the repository in VS Code and launch `index.html` using **Live Server**.
 
 ---
 
 ## `// LIVE NETWORK`
 
-Once GitHub Pages is enabled:
+<div align="center">
 
-```text
-https://ashmitamanikandan-sys.github.io/pulse-runner/
-```
+<a href="https://ashmitamanikandan-sys.github.io/pulse-runner/">
+  <img src="./assets/play-pulse-runner.svg" width="82%" alt="Play Pulse Runner">
+</a>
+
+</div>
 
 ---
 
 ## `// DEVELOPMENT LOG`
 
-Pulse Runner started as an experiment in building something that felt more like a real game than a basic browser project.
-
-While creating it, I explored:
+Pulse Runner started as an experiment in making a browser project feel like an actual game instead of a basic webpage.
 
 ```text
-GAME LOGIC
-COLLISION DETECTION
-CANVAS ANIMATION
-HUD DESIGN
-VISUAL FEEDBACK
-AUDIO GENERATION
-DIFFICULTY SCALING
-PLAYER MOVEMENT
-CYBERPUNK UI SYSTEMS
-```
-
-The project is still evolving.
-
----
-
-## `// SYSTEM STATUS`
-
-```text
-CORE ENGINE          ONLINE
-ORB CONTROL          ONLINE
-CYBER HUD            ONLINE
-FIREWALL SYSTEM      ONLINE
-SHARD STREAKS        ONLINE
-MALWARE THREATS      ONLINE
-HARD MODE            ONLINE
-AUDIO LAYER          ONLINE
-
-NEXT PROTOCOL        LOADING...
+GAME LOGIC             // ACTIVE
+COLLISION DETECTION    // ACTIVE
+CANVAS ANIMATION       // ACTIVE
+CYBERPUNK HUD          // ACTIVE
+VISUAL FEEDBACK        // ACTIVE
+AUDIO GENERATION       // ACTIVE
+DIFFICULTY SCALING     // ACTIVE
+PLAYER MOVEMENT        // ACTIVE
 ```
 
 ---
 
 <div align="center">
 
-### `SYSTEM STATUS // ACTIVE`
+<img src="./assets/system-status.svg" width="90%" alt="Pulse Runner system status">
 
-### **PULSE RUNNER**
+<br><br>
+
+### `BUILD → DODGE → SURVIVE`
 
 `NEON SIGNAL // HOSTILE NETWORK // KEEP MOVING`
 
