@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulse Runner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="game-shell">
+    <canvas id="game" aria-label="Pulse Runner game canvas"></canvas>
+
+    <section class="hud" aria-live="polite">
+      <div class="hud-card hud-left">
+        <span class="hud-label">SCORE</span>
+        <strong id="score">0000</strong>
+        <span class="hud-label">DISTANCE</span>
+        <strong id="distance">0.0 KM</strong>
+        <span class="hud-label">COMBO</span>
+        <strong id="combo">x1</strong>
+      </div>
+
+      <div class="brand">
+        <div class="brand-top">PULSE</div>
+        <div class="brand-bottom">RUNNER</div>
+        <div class="tagline">BUILD // DODGE // SURVIVE</div>
+      </div>
+
+      <div class="hud-card hud-right">
+        <span class="hud-label">LEVEL <b id="level">1</b></span>
+        <div class="level-dots" id="levelDots"></div>
+        <span class="hud-label">ENERGY</span>
+        <div class="energy-track">
+          <div id="energyBar" class="energy-bar"></div>
+        </div>
+        <div class="hud-actions">
+  <button id="musicBtn" class="mini-btn" type="button" aria-label="Toggle synth ambience">♪</button>
+  <button id="pauseBtn" class="mini-btn" type="button">Ⅱ</button>
+</div>
+      </div>
+    </section>
+
+
+    <div id="eventFeed" class="event-feed" aria-live="polite"></div>
+
+    <div id="comboBanner" class="combo-banner" aria-live="polite">
+      <span id="comboKicker">DATA CHAIN</span>
+      <strong id="comboText">x2 LINKED</strong>
+      <small id="comboSub">SIGNAL STREAK ACTIVE</small>
+    </div>
+
+    <div id="levelBanner" class="level-banner" aria-live="polite">
+      <span>SECTOR ESCALATION</span>
+      <strong id="levelBannerText">LEVEL 2</strong>
+      <small id="levelBannerSub">NETWORK VELOCITY INCREASED</small>
+    </div>
+
+    <section id="startPanel" class="panel">
+      <div class="panel-inner">
+        <p class="eyebrow">CYBER NETWORK // SECTOR 07</p>
+        <h1>PULSE RUNNER</h1>
+        <p>
+          Guide the pulse orb through a collapsing neon network.
+          Dodge firewalls and hostile system objects, collect energy shards, and survive as the network escalates.
+        </p>
+
+        <div class="controls-grid">
+          <div><kbd>←</kbd><kbd>→</kbd><span>switch lanes</span></div>
+          <div><kbd>A</kbd><kbd>D</kbd><span>switch lanes</span></div>
+          <div><kbd>SPACE</kbd><span>pulse jump</span></div>
+        </div>
+
+        <button id="startBtn" class="primary-btn" type="button">INITIALIZE RUN</button>
+      </div>
+    </section>
+
+    <section id="gameOverPanel" class="panel hidden">
+      <div class="panel-inner">
+        <p id="deathReason" class="eyebrow danger">SYSTEM BREACH</p>
+        <h2>RUN TERMINATED</h2>
+        <p id="finalStats">Score 0 • Distance 0.0 KM</p>
+        <button id="restartBtn" class="primary-btn" type="button">REBOOT</button>
+      </div>
+    </section>
+
+    <div id="breachFlash" class="breach-flash" aria-hidden="true"></div>
+    <div id="breachMessage" class="breach-message" aria-live="assertive">
+      <span class="breach-kicker">SECURITY ALERT</span>
+      <strong>FIREWALL BREACHED</strong>
+      <span>CONNECTION TERMINATED</span>
+    </div>
+
+    <nav class="mobile-controls" aria-label="Mobile game controls">
+      <button id="leftBtn" type="button" aria-label="Move left">◀</button>
+      <button id="jumpBtn" type="button" aria-label="Jump">▲</button>
+      <button id="rightBtn" type="button" aria-label="Move right">▶</button>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
